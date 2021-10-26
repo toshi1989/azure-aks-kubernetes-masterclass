@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: getting-started-tushar
-          image: acraendevfab.azurecr.io/sampleapps/tushar
+          image: acraendevfab.azurecr.io/sampleapps/ifti
           ports:
             - containerPort: 80
 

@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: app2-nginx-deployment
   labels:
-    app: app2-nginx 
+    app: app4-nginx 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app2-nginx
+      app: app4-nginx
   template:
     metadata:
       labels:
-        app: app2-nginx
+        app: app4-nginx
     spec:
       containers:
-        - name: getting-started-ifti
-          image: acraendevfab.azurecr.io/sampleapps/ifti
+        - name: getting-started-aniju
+          image: acraendevfab.azurecr.io/sampleapps/aniju
           ports:
             - containerPort: 3000
